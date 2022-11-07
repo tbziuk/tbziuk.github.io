@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="https://formspree.io/f/mwkzwdyp" method="post" autocomplete="on">
+        <header>
+            <h1 style="color:rgb(0, 0, 103); font-size:23px; margin-bottom: 4px;">A Simple Form</h1>
+            <h2 style="font-style: italic; color:rgb(146, 139, 192); font-size: 20px; margin-top: 0px;">Form Fundamentals</h2>
+        </header>
+        <section id="CI">
+            <caption>Customer Info</caption><br><br>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" size="30" autofocus required><br><br>
+            <label for="telephone">Telephone:</label>
+            <input type="telNo" name="telephone" id="telephone" placeholder="Pattern: 1-234-567-8910" size="30" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required ><br><br>
+            <label for="email">Email address:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email address" size="30" multiple required>
+            <br><br>
+        </section>
+        <section id="B">
+            <caption>Books</caption><br><br>
+            <input type="text" name="books" id="books" list="book-list">
+            <datalist id="book-list">
+                <option value="Dziady III">A. Mickiewicz - Dziady cz. III</option>
+                <option value="Kordian">J. Słowacki - Kordian</option>
+                <option value="Potop">H. Sienkieicz - Potop</option>
+                <option value="Lalka">B. Prus - Lalka</option>
+                <option value="Ferdydurke">W. Gombrowicz - Ferdydurke</option>
+            </datalist>
+            <label>Quantity (Maximum 5): <input type="number" name="number" min="1" max="5" size="15"></label>
+        </section><br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+</body>
+</html>
