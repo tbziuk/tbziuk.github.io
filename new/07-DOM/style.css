@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(1, 65, 114);
+}
+
+div#uczniowie{
+    background-color: #dfdfd5;
+    padding: 50px;
+    margin: 25px;
+}
+
+div#uczniowie div#title{
+    display: flex;
+}
+
+div#uczniowie div#title span.tytul{
+    background-color: #bdbdb7;
+}
+
+div#uczniowie div{
+    display: flex;
+}
+
+div#uczniowie div span,
+div#uczniowie div input{
+    padding: 5px;
+    flex-basis: 10%;
+    text-align: center;
+    margin: 5px;
+    align-items: center;
+}
+
+div#uczniowie div span{
+    align-items: baseline;
+}
+
+
+input{
+    width: 50px;
+    font-size: 0.85em;
+}
+
+div#uczniowie div h2 {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    border: 1px solid #000000;
+}
+
+button {
+    display: block;
+    margin: 25px auto;
+    padding: 20px 60px;
+    border: 1px solid #bdbdb7;
+    background-color: #bdbdb7;
+    font-size: 1.3em;
+}
+
+button:hover {
+    background-color: #a0a09c;
+    transition: .4s;
+}
+
+.green{
+    background-color: rgba(28, 161, 16, 0.419);
+}
+
+.red{
+    background-color: rgba(199, 25, 25, 0.397);
+}
