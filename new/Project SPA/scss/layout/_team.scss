@@ -1,0 +1,132 @@
+.team {
+    .container {
+        .team-holder {
+            @include flexbox;
+            justify-content: space-between;
+
+            .team-member {
+                flex-basis: 32.16%;
+                @include flexbox;
+                justify-content: center;
+                position: relative;
+
+                .team-member-photo {
+                    @include flexbox;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .team-description {
+                    position: relative;
+                    top: 0;
+                    width: 85%;
+                    min-height: 175px;
+                    top: -50px;
+                    background-color: #fff;
+                    padding: 35px 30px 20px;
+                    transition: all 1s;
+
+                    h2 {
+                        font-size: 22px;
+                        margin: 0 auto;
+                    }
+
+                    p {
+                        margin: 0 auto;
+                        padding: 0;
+                        max-width: initial;
+                        font-size: $paraghs;
+                    }
+
+                    .icon-holder {
+                        @include flexbox;
+                        justify-content: space-around;
+                        align-items: center;
+                        margin-top: 20px;
+                        opacity: 0;
+                        transition: all 1s;
+
+                        .sc-icon {
+                            border: 1px solid $light-gray-color;
+                            padding: 10px 14px;
+                            border-radius: 360px;
+                            color: $violet-color;
+                            font-size: 20px;
+
+                            &.tight {
+                                padding: 10px 16px;
+                            }
+
+                            &.wide {
+                                padding: 10px 12px;
+                            }
+
+                            &:hover {
+                                color: #fff;
+                                background-color: $blue-color;
+                                border: 1px solid #fff;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .team-description {
+                        top: -100px;
+                        transition: all 1s;
+                        box-shadow: $box-shadow-ef2;
+
+                        .icon-holder {
+                            opacity: 1;
+                            transition: all 1s;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        @media all and (max-width: $medium) {
+            p {
+                margin: 30px 0 100px;
+            }
+
+            .team-holder {
+                justify-content: center;
+
+                .team-member {
+                    flex-basis: 90%;
+
+                    .team-description {
+                        top: -90px;
+                        min-height: 175px;
+
+                        .icon-holder {
+                            justify-content: center;
+
+                            .sc-icon {
+                                margin: 0 15px;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .team-description {
+                            top: -150px;
+                            transition: all 1s;
+                            box-shadow: $box-shadow-ef2;
+
+                            .icon-holder {
+                                display: flex;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

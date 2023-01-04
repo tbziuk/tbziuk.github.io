@@ -1,0 +1,33 @@
+
+/* Colors */
+$blue-color: #1ba4ce;
+$blue-color-alpha: rgba($color: #1ba4ce, $alpha: 0.8);
+
+$black-color: #30383b;
+$violet-color: #473452;
+$gray-color: #555555;
+$light-gray-color: #888888;
+
+/* Fonts */
+$curvy-font: 'Bellota', cursive;
+$main-font: 'Roboto', sans-serif;
+
+/* Font Sizes */
+$paraghs: 16px;
+$headers: 42px;
+
+/* Special */
+$box-shadow-ef: 0 5px 20px #f0f0f0;
+$box-shadow-ef2: 0 5px 20px #a6a6a7;
+
+/* Window Sizes */
+$extra-small: 480px;
+$small: 576px;
+$medium: 768px;
+$large: 922px;
+$extra-large: 1200px;
+
+/* Container */
+$small-container: 100%;
+$large-container: 960px;
+$extra-large-container: 1140px;

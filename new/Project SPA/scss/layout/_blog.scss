@@ -1,0 +1,82 @@
+.blog {
+    .container {
+        .blog-holder {
+            width: 100%;
+            @include flexbox;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+
+            .blog {
+                border: .1px solid rgba(193, 193, 193, 0.5);
+                flex-basis: 30%;
+                padding: 15px;
+
+                img {
+                    min-width: 320px;
+                    width: 100%;
+                    height: auto;
+                }
+
+                .combined {
+                    text-transform: uppercase;
+                    font-family: $main-font;
+                    font-size: 12px;
+                    font-weight: 300;
+                    margin: 30px auto 15px;
+                }
+
+                h3 {
+                    font-size: 22px;
+                    font-family: $curvy-font;
+                    font-weight: 700;
+                }
+
+                p {
+                   margin: 20px auto 60px; 
+                   max-height: 27px;
+                   overflow: hidden;
+                }
+
+                &:hover {
+                    box-shadow: $box-shadow-ef;
+                }
+
+                .read-more-btn:hover {
+                    background-color: $blue-color;
+                }
+
+                @media all and (max-width: $extra-large) and (min-width: $medium) {
+                    margin: 0 10px;
+                }
+            }
+        }
+        @media all and (max-width: $medium) {
+            p {
+                margin: 30px 0 100px;
+            }
+
+            .blog-holder {
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .blog {
+                    flex-basis: 90%;
+                    padding: 30px;
+                    margin: 15px;
+
+                    .combined {
+                        font-size: $paraghs;
+                    }
+
+                    h3 {
+                        font-size: 34px;
+                    }
+
+                    p {
+                        max-height: fit-content;
+                    }
+                }
+            }
+        }
+    }
+}

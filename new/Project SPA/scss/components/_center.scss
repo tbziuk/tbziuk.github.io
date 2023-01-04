@@ -1,0 +1,5 @@
+.center {
+    @include flexbox;
+    align-items: center;
+    justify-content: center;
+}

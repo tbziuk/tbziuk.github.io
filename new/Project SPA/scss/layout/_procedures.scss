@@ -1,0 +1,61 @@
+.procedures {
+    .container {
+        .thingis-holder {
+            @include flexbox;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+
+            .thing {
+                border: .1px solid rgba(193, 193, 193, 0.5);
+                flex-basis: 30%;
+                padding: 15px;
+
+                h3 {
+                    font-family: $curvy-font;
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: $violet-color;
+                }
+
+                p {
+                    max-width: 292px;
+                    color: $light-gray-color;
+                    font-family: $main-font;
+                    line-height: 27px;
+                    font-weight: 300;
+                    margin: 20px auto 30px;
+                }
+
+                &:hover {
+                    box-shadow: $box-shadow-ef;
+                }
+
+                .read-more-btn:hover {
+                    background-color: $blue-color;
+                }
+
+                @media all and (max-width: $extra-large) and (min-width: $medium) {
+                    margin: 0 10px;
+                }
+            }
+        }
+
+        @media all and (max-width: $medium) {
+            p {
+                margin: 30px 0 100px;
+            }
+            
+            .thingis-holder {
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .thing {
+                    flex-basis: 90%;
+                    padding: 15px 0;
+                    margin: 15px 0;
+                }
+            }
+        }
+    }
+
+}

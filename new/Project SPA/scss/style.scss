@@ -1,0 +1,21 @@
+
+@import 'utils/variables';
+@import 'utils/mixins';
+
+@import 'base/normalize';
+@import 'base/global';
+
+@import 'components/center';
+@import 'components/buttons';
+@import 'components/tops';
+
+@import 'layout/nav';
+@import 'layout/header';
+@import 'layout/main-section';
+@import 'layout/gallery';
+@import 'layout/procedures';
+@import 'layout/team';
+@import 'layout/form';
+@import 'layout/blog';
+@import 'layout/contact';
+@import 'layout/footer';

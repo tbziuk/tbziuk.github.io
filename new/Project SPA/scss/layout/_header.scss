@@ -1,0 +1,162 @@
+.main-header {
+    position: relative;
+    top: 114px;
+    background-image: url('../img/header-flowers.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: -25px -20px;
+
+    .container {
+        margin-top: 185px;
+
+        .header-content {
+
+            h3,
+            h1 {
+                font-family: $curvy-font;
+                font-weight: 700;
+            }
+
+            h3 {
+                font-size: $paraghs;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: $violet-color;
+            }
+
+            h1 {
+                font-size: 60px;
+                color: $black-color;
+                max-width: 600px;
+            }
+
+            p {
+                max-width: 501px;
+                font-size: $paraghs;
+                line-height: 27px;
+                color: $gray-color;
+                font-weight: 400;
+                font-family: $main-font;
+            }
+        }
+
+        .header-buttons {
+            @include flexbox;
+            margin: 50px 0;
+            font-family: $main-font;
+            font-weight: 400px;
+            text-align: center;
+            font-size: $paraghs;
+
+            .reserve-btn {
+                @include flexbox;
+                align-items: center;
+                background-color: $blue-color;
+                text-decoration: none;
+                color: #fff;
+                padding: 10px 28px;
+                height: 50px;
+                width: 170px;
+                cursor: pointer;
+
+            }
+
+            .watch-btn {
+                @include flexbox;
+                align-items: center;
+                color: $violet-color;
+                text-decoration: none;
+                padding: 10px 28px;
+                height: 50px;
+                width: 210px;
+                cursor: pointer;
+
+                .play-icon {
+                    font-size: 32px;
+                    display: inline-block;
+                }
+            }
+            @media all and (max-width: $extra-small) {
+                font-size: 12px;
+                
+                .reserve-btn, .watch-btn {
+                    padding: 4px 8px;
+                    justify-content: center;
+                    width: 140px;
+                    height: 40px;
+                }
+
+                .watch-btn {
+                    margin: 0 5px;
+                    .play-icon {
+                        font-size: 24px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .header-img {
+        position: absolute;
+        top: -299px;
+        right: 0;
+        z-index: 600;
+
+        img {
+            max-width: 890px;
+            width: 100%;
+            height: auto;
+        }
+        @media all and (max-width: 1750px) {
+            img {
+                max-width: 700px;
+            }
+        }
+        @media all and (max-width: 1500px) {
+            img {
+                max-width: 600px;
+            }
+        }
+        @media all and (max-width: 1250px) {
+            img {
+                display: none;
+            }
+        }
+    }
+    @media all and (max-width: $medium) {
+        & {
+            top: 74px;
+            background-size: 50px 100px;
+            background-position: -15px 5px;
+    
+            .container {
+                margin-top: 0;
+
+                .header-content {
+        
+                    h3 {
+                        line-height: 15px;
+                        margin: 15px 0 0;
+                        font-size: $paraghs;
+                    }
+        
+                    h1 {
+                        font-size: 35px;
+                        line-height: 40px;
+                        max-width: 400px;
+                        margin: 10px 0 0;
+                    }
+        
+                    p {
+                        max-width: 460px;
+                        height: 30px;
+                        font-size: $paraghs;
+                        line-height: 25px;
+                        margin-bottom: 100px;
+                    }
+                }
+            }
+        }
+    }    
+}

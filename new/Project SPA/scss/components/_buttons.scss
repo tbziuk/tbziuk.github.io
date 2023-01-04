@@ -1,0 +1,39 @@
+.read-more-btn-big{
+    display: inline-block;
+    background-color: $blue-color;
+    border-radius: 50px;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $main-font;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #fff;
+        font-size: 14px;
+    }
+}
+
+.read-more-btn{
+    display: inline-block;
+    background-color: $black-color;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 140px;
+    margin: 0 auto 25px;
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $main-font;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #fff;
+        font-size: 14px;
+    }
+}

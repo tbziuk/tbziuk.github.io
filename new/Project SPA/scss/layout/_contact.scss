@@ -1,0 +1,170 @@
+.contact {
+    background-color: $blue-color;
+    padding: 80px 0 120px;
+
+    h2 {
+        color: #fff;
+        font-family: $curvy-font;
+        font-weight: 700;
+        font-size: $headers;
+        text-align: center;
+        margin: 0;
+        padding: 0 0 50px;
+    }
+
+    p {
+        font-family: $main-font;
+        font-weight: 300;
+        line-height: 27px;
+        letter-spacing: .7px;
+        max-width: 674px;
+        color: #fff;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 60px;
+    }
+
+    .example-contact {
+        @include flexbox;
+        justify-content: space-between;
+
+        .icon-holder {
+            flex-basis: 40%;
+            @include flexbox;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: center;
+
+            .icon {
+                text-transform: uppercase;
+                font-size: $paraghs;
+                font-family: $main-font;
+                font-weight: 400;
+
+                .colab {
+                    @include flexbox;
+                    flex-wrap: nowrap;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin: 25px auto;
+
+
+                    img {
+                        max-height: 17px;
+                        margin: 10px;
+                    }
+
+                    p {
+                        margin: 0;
+                        padding: 0 40px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+
+        .form-holder {
+            padding-top: 20px;
+            flex-basis: 60%;
+            justify-content: flex-start;
+            align-items: center;
+
+            form {
+                width: 100%;
+
+                input,
+                textarea {
+                    background-color: $blue-color;
+                    width: 80%;
+                    color: #fff;
+                    border: none;
+                    border-bottom: 1px solid #fff;
+                    padding: 15px 10px;
+                    margin-right: 15px;
+                    margin-bottom: 30px;
+
+                    &::placeholder {
+                        color: #fff;
+                        font-family: $main-font;
+                    }
+
+                    &:focus-visible {
+                        outline: none;
+                    }
+                }
+
+                #comment {
+                    min-height: 80px;
+                    margin-top: 30px;
+                    display: block;
+                    resize: none;
+                }
+
+                .submit-btn {
+                    margin-top: 30px;
+                    background-color: #fff;
+                    border-radius: 50px;
+                    border: 1px solid #fff;
+                    padding: 20px 50px;
+                    font-family: $main-font;
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $violet-color;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    @media all and (max-width: $medium) {
+        padding: 80px 0;
+
+        .example-contact {
+
+            justify-content: center;
+            align-items: center;
+
+            .icon-holder {
+                flex-basis: 80%;
+                margin: 0 auto;
+
+                .icon {
+
+                    .colab {
+
+                        img {
+                            max-height: 32px;
+                        }
+                    }
+                }
+            }
+
+            .form-holder {
+                flex-basis: 80%;
+                margin: 0 auto;
+
+                form {
+
+                    input,
+                    textarea {
+                        width: 100%;
+                        border: .2px solid #fff;
+                        ;
+                    }
+
+                    #comment {
+                        margin-top: 0;
+                        min-height: 200px;
+                    }
+
+                    .submit-btn {
+                        display: block;
+                        margin: 0 auto;
+                        padding: 5px 20px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
